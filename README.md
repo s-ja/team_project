@@ -1,5 +1,5 @@
 # team_project
-0406 ui/ux디자인 팀 프로젝트
+0406 ui/ux디자인 팀 프로젝트 team4
 
 # team member
 안승지 / 조진양
