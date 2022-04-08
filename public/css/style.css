@@ -1,0 +1,48 @@
+a, a:link{
+    text-decoration: none;
+    color: inherit;
+    font-style: normal;
+}
+body{
+    font-family: "Maven PRO", "Noto Sans KR", sans-serif;
+    color: white;
+    background: black;
+}
+.header{
+    display: flex;
+    height: 100px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+}
+.header button{
+    width: 50px;
+    height: 20px;
+}
+.header-logo{
+    width: 154px;
+    float: left;
+    height: 152px;
+}
+.loginBTN a{
+    background-color: #e50914;
+    line-height: normal;
+    padding: 7px 17px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.article-wrap{
+    text-align: center;
+}
+aside p{
+    color: #757575;
+}
+.footer-links{
+    color: #757575;
+}
+address{
+    font-style: normal;
+    color: #757575;
+}
