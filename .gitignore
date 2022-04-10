@@ -1,0 +1,4 @@
+# excluded folder
+node_modules/
+
+# excluded files
