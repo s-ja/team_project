@@ -12,9 +12,6 @@ a,a:link{
 .d_none{
     display: none  ;
 }
-header{
-    position: relative;
-}
 .header_wrap{
     display: flex;
     /* width: calc(100% - 25px); */
@@ -45,6 +42,11 @@ header{
     line-height: 30.42px;
     /* font-weight: bolder; */
 }
+video{
+    position: absolute;
+    top: -30px;
+    z-index: -1;
+}
 .menu{
     position: absolute;
     display: flex;
@@ -62,7 +64,7 @@ header{
     color: aliceblue;
     width: 30%;
     position: absolute;
-    top: 30%;
+    top: calc(30% - 25px);
     left: 100px;
 }
 .n_series{
@@ -97,7 +99,7 @@ header{
 .volume{
     position: absolute;
     right: 0;
-    top: 70%;
+    top: 65%;
 }
 .volume button{
     color: aliceblue;
@@ -108,4 +110,5 @@ header{
     font-weight: 900;
     font-size: 1rem;
     border: 2px solid white;
+    margin-right: 50px;
 }
