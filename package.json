@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/s-ja/team_project.git"
+    "url": "https://github.com/s-ja/team_project.git"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,6 @@
   "homepage": "https://github.com/s-ja/team_project#readme",
   "devDependencies": {
     "express": "^4.17.3",
-    "jquery": "^3.6.0",
-    "jQuery": "^1.7.4"
+    "jquery": "^3.6.0"
   }
 }
