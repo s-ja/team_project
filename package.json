@@ -1,0 +1,24 @@
+{
+  "name": "team_project",
+  "version": "1.0.0",
+  "description": "0406 ui/ux디자인 팀 프로젝트 team4",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-ja/team_project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-ja/team_project/issues"
+  },
+  "homepage": "https://github.com/s-ja/team_project#readme",
+  "devDependencies": {
+    "express": "^4.17.3",
+    "jQuery": "^1.7.4"
+  }
+}
