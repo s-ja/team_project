@@ -1,64 +1,88 @@
-a, a:link{
+body{
+    font: 16px/1.5 "Noto Sans KR",sans-serif;
+    color: #333;
+    background: black;
+    /* width: 1000px; */
+    margin: 0 auto;
+}
+a,a:link{
     text-decoration: none;
     color: inherit;
-    font-style: normal;
 }
-body{
-    font-family: "Maven PRO", "Noto Sans KR", sans-serif;
-    color: white;
-    background: black;
+.d_none{
+    display: none  ;
 }
-.header{
+.header_wrap{
     display: flex;
-    height: 100px;
-    margin: 0 auto;
-    justify-content: space-between;
-    padding: 20px;
-    overflow: hidden;
+    width: calc(100% - 25px);
+    /* padding: 100px 25px; */
+    background: rgba(0,0,0,0.5);
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
-.header button{
+.logo{
+    position: absolute;
+    width: 100px;
+    left: 50px;
+    top: 20px;
+}
+.nav{
+    position: absolute;
+    display: flex;
+    color: aliceblue;
+    left: 200px;
+    top: 20px;
+    column-gap: 20px;
+    line-height: 30.42px;
+    /* font-weight: bolder; */
+}
+.menu{
+    position: absolute;
+    display: flex;
+    color: aliceblue;
+    right: 20px;
+    top: 20px;
+    column-gap: 20px;
+    line-height: 30.42px;
+}
+.hero{
+    width: 100%;
+    height: auto;
+}
+.banner {
+    color: aliceblue;
+    width: 30%;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+.n_series{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-weight: bolder;
+}
+.n_series img{
     width: 50px;
-    height: 20px;
-   
+    height: auto;
 }
-.header-logo{
-    width: 154px;
-    float: left;
-    height: 152px;
-}
-.loginBTN a{
-    background-color: #e50914;
-    line-height: normal;
-    padding: 7px 17px;
-    border-radius: 10px;
-    font-weight: 500;
-    font-size: 1rem;
-}
-.start{
-    color: #fff;
-    background-color: #e50914;
-}
-.article-wrap{
-    text-align: center;
-}
-.wrap1{
+.buttons{
     display: flex;
-    justify-content: space-between;
+    column-gap: 10px;
+    padding: 20px 0;
 }
-.tv-enjoy-container .offline-container .device-container .kid-container{
-    width: 48%;
-    height: 100%;
-    flex: 0 1 auto;
-    box-sizing: border-box;
+.play_button, .info_button{
+    color: black;
+    background: white;
+    width: auto;
+    padding: 5px 15px;
+    border-radius: 10px;
+    font-weight: 900;
+    font-size: 18px;
+    border-style: none;
 }
-
-aside p{
-    color: #757575;
-}
-.footer-links{
-    color: #757575;
-}
-address{
-    font-style: normal;
-    color: #757575;
+.info_button{
+    color: white;
+    background: rgba(0,0,0,0.5);
 }
