@@ -1,3 +1,6 @@
+*{
+    border: 1px solid springgreen;
+}
 body{
     font: 16px/1.5 "Noto Sans KR",sans-serif;
     color: #333;
@@ -96,12 +99,13 @@ video{
     color: white;
     background: rgba(0,0,0,0.5);
 }
-.volume{
+.extra{
     position: absolute;
     right: 0;
     top: 65%;
+    display: flex;
 }
-.volume button{
+.extra button{
     color: aliceblue;
     background: transparent;
     width: 50px;
@@ -111,4 +115,14 @@ video{
     font-size: 1rem;
     border: 2px solid white;
     margin-right: 50px;
+}
+.rating{
+    font-weight: bolder;
+    background: gold;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    
 }
