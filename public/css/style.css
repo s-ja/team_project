@@ -19,6 +19,7 @@ body{
 .header button{
     width: 50px;
     height: 20px;
+   
 }
 .header-logo{
     width: 154px;
@@ -33,9 +34,24 @@ body{
     font-weight: 500;
     font-size: 1rem;
 }
+.start{
+    color: #fff;
+    background-color: #e50914;
+}
 .article-wrap{
     text-align: center;
 }
+.wrap1{
+    display: flex;
+    justify-content: space-between;
+}
+.tv-enjoy-container .offline-container .device-container .kid-container{
+    width: 48%;
+    height: 100%;
+    flex: 0 1 auto;
+    box-sizing: border-box;
+}
+
 aside p{
     color: #757575;
 }
