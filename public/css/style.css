@@ -12,12 +12,20 @@ a,a:link{
 .d_none{
     display: none  ;
 }
+header{
+    position: relative;
+}
 .header_wrap{
     display: flex;
-    width: calc(100% - 25px);
+    /* width: calc(100% - 25px); */
+    width: 100%;
     /* padding: 100px 25px; */
-    background: rgba(0,0,0,0.5);
-    position: relative;
+    /* background: rgba(0,0,0,0.5); */
+    background: linear-gradient(to bottom,black,black 10%,transparent);
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
 }
@@ -54,7 +62,7 @@ a,a:link{
     color: aliceblue;
     width: 30%;
     position: absolute;
-    top: 500px;
+    top: 30%;
     left: 100px;
 }
 .n_series{
@@ -85,4 +93,19 @@ a,a:link{
 .info_button{
     color: white;
     background: rgba(0,0,0,0.5);
+}
+.volume{
+    position: absolute;
+    right: 0;
+    top: 70%;
+}
+.volume button{
+    color: aliceblue;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 2px solid white;
 }
