@@ -1,0 +1,108 @@
+body{
+    font: 16px/1.5 "Noto Sans KR",sans-serif;
+    color: white;
+    background: black;
+    /* width: 1000px; */
+    margin: 0 auto;
+}
+a,a:link{
+    text-decoration: none;
+    color: inherit;
+}
+.d_none{
+    display: none  ;
+}
+h1 {
+    font-size: 40px;
+    color: #fff;
+}
+h2 {
+    font-size: 30px;
+    color: #fff;
+}
+h3 {
+    font-size: 20px;
+    color: #fff;
+}
+.email-start{
+    position: relative;
+}
+.article-wrap{
+    text-align: center;
+}
+.header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 20px;
+    overflow: hidden;
+}
+.header-logo{
+    width: 154px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.header button{
+    width: 50px;
+    height: 20px;
+    float: right;
+}
+.loginBTN{
+    width: 100px;
+    background-color: #e50914;
+    color: #fff;
+    border-radius: 1rem;
+}
+.loginBTN a{
+    width: 100px;
+    color: #fff;
+    display: flex;
+    border-radius: 1rem;
+}
+.start{
+    color: #fff;
+    background-color: #e50914;
+    border: 0;
+    
+}
+.tv-enjoy-container-wrap, .offline-container-wrap, .device-container-wrap, .kid-container-wrap{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 자주묻는 질문 */
+.faq{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.faq-list {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.footer-guide{
+    max-width: 1100px;
+    margin: 0 auto;
+    align-items: center;
+}
+.footer-links-wrap {
+    max-width: 1000px;
+    font-size: 13px;
+    box-sizing: border-box;
+}
+ul.structural>li {
+    list-style: none;
+    margin-left: 0;
+}
+.footer-link-item {
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 16px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+    vertical-align: top;
+}
