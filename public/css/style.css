@@ -1,3 +1,6 @@
+*{
+    border: 1px solid springgreen;
+}
 body{
     font: 16px/1.5 "Noto Sans KR",sans-serif;
     color: #333;
@@ -56,6 +59,9 @@ video{
     column-gap: 20px;
     line-height: 30.42px;
 }
+.menu li:last-child img{
+    border-radius: 5px;
+}
 .hero{
     width: 100%;
     height: auto;
@@ -96,12 +102,13 @@ video{
     color: white;
     background: rgba(0,0,0,0.5);
 }
-.volume{
+.extra{
     position: absolute;
     right: 0;
     top: 65%;
+    display: flex;
 }
-.volume button{
+.extra button{
     color: aliceblue;
     background: transparent;
     width: 50px;
@@ -112,3 +119,67 @@ video{
     border: 2px solid white;
     margin-right: 50px;
 }
+.rating{
+    font-weight: bolder;
+    background: gold;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.rating img {
+    width: 50px;
+    height: 50px;
+}
+.anime, .f_drama, .k_drama, .movie{
+    width: 100%;
+    height: 200px;
+    background: black;
+    display: inline-block;
+    position: absolute;
+    top: 73%;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.f_drama{
+    top: 103%;
+}
+.k_drama{
+    top: 133%;
+}
+.movie{
+    top: 163%;
+}
+.category_title{
+    padding: 0 50px;
+}
+.controls{
+    font-size: 2rem;
+    color: aliceblue;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+}
+.controls > .prev, .controls > .next{
+    width: 50px;
+    height: 200px;
+    background: rgba(0,0,0,0.5);
+    line-height: 200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.carousel_item{
+    display: flex;
+    column-gap: 5px;
+    overflow: scroll;
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
+}
+/* .carousel_item::-webkit-scrollbar{
+    display: none;
+} */
