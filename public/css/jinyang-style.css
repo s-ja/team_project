@@ -24,8 +24,15 @@ h3 {
     font-size: 20px;
     color: #fff;
 }
+.header-sel-lang{
+    box-sizing: border-box;
+}
 .email-start{
     position: relative;
+}
+.email-start input{
+    width: 50%;
+    box-sizing: border-box;
 }
 .article-wrap{
     text-align: center;
@@ -50,14 +57,14 @@ h3 {
 .loginBTN{
     width: 100px;
     background-color: #e50914;
-    color: #fff;
-    border-radius: 1rem;
+    border-radius: 0.3rem;
 }
 .loginBTN a{
     width: 100px;
     color: #fff;
     display: flex;
-    border-radius: 1rem;
+    text-align: center;
+    padding: 10px 10px 0 25px;
 }
 .start{
     color: #fff;
@@ -91,6 +98,7 @@ h3 {
     max-width: 1000px;
     font-size: 13px;
     box-sizing: border-box;
+    text-align: center;
 }
 ul.structural>li {
     list-style: none;

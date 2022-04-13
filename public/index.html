@@ -22,7 +22,14 @@
                     <img src="images/logo.png" alt="넷플로고">
                 </a>
             </div>
-            <button >언어바꾸기</button>
+            <div class="header-sel-lang">
+                <div class="select-language">
+                    <select data-uia="language-picker" class="ui-select medium" id="lang-switcher-select" tabindex="0" placeholder="lang-switcher">
+                        <option selected="" lang="ko" value="/kr/" data-language="ko" data-country="KR">한국어</option>
+                        <option lang="en" value="/kr-en/" data-language="en" data-country="KR">English</option>
+                    </select>
+                </div>
+            </div>
             <div class="loginBTN">
                 <a href="/login">로그인</a>
             </div>
@@ -40,7 +47,6 @@
                             <input type="email" name="email" class="nfTextField"  value="" maxlength="50" minlength="5">
                             <label class="placeLabel">이메일 주소</label></label>
                             <button class="start" type="submit" autocomplete="off"> <p>시작하기<i class="fas fas fas fa-angle-right"></i></p></button>
-                            
                         </div>
                 </article>
             </article>
@@ -93,7 +99,6 @@
     </div>
 
     <section>
-        <article></article>
         <h1 class="faq">자주 묻는 질문</h1>
         <ul class="faq-list">
             <li class="faq-list-item">
@@ -142,46 +147,122 @@
             </li>
         </ul>
     </section>
+    <div class="bottom-email">
+        <div class="email-start">
+            <label class="input_id" placeholder="email">
+            <input type="email" name="email" class="nfTextField"  value="" maxlength="50" minlength="5">
+            <label class="placeLabel">이메일 주소</label></label>
+            <button class="start" type="submit" autocomplete="off"> <p>시작하기<i class="fas fas fas fa-angle-right"></i></p></button>
+        </div>
+    </div>
     <footer>
-        <div class="footer-guide">
-            <aside>
-                <ul class="footer-links-wrap">
-                    <li class="footer-links-item"><a href="#">자주 묻는 질문</a></li>
-                    <li class="footer-links-item"><a href="#">고객 센터</a></li>
-                    <li class="footer-links-item"><a href="#">계정</a></li>
-                    <li class="footer-links-item"><a href="#">미디어 센터</a></li>
-                    <li class="footer-links-item"><a href="#">투자 정보(IR)</a></li>
-                    <li class="footer-links-item"><a href="#">입사 정보</a></li>
-                    <li class="footer-links-item"><a href="#">넷플릭스 지원 디바이스</a></li>
-                    <li class="footer-links-item"><a href="#">이용 약관</a></li>
-                    <li class="footer-links-item"><a href="#">개인정보</a></li>
-                    <li class="footer-links-item"><a href="#">쿠키 설정</a></li>
-                    <li class="footer-links-item"><a href="#">회사 정보</a></li>
-                    <li class="footer-links-item"><a href="#">문의하기</a></li>
-                    <li class="footer-links-item"><a href="#">속도 테스트</a></li>
-                    <li class="footer-links-item"><a href="#">법적 고지</a></li>
-                    <li class="footer-links-item"><a href="#">오직 넷플릭스에서고지</a></li>
+    <div class="footer-guide">
+        <aside>
+        <div class="site-footer">
+                <p class="footer-top">질문이 있으신가요? 문의 전화: 
+                    <a class="footer-top-a" href="tel:080-001-9587">080-001-9587</a>
+                </p>
+                <ul class="footer-links structural">
+                    <li class="footer-link-item" placeholder="footer_responsive_link_faq_item">
+                    <a class="footer-link" href="#" placeholder="footer_responsive_link_faq">
+                        <span id="">자주 묻는 질문</span></a></li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_help_item">
+                        <a class="footer-link" href="#" placeholder="footer_responsive_link_help">
+                            <span id="">고객 센터</span></a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_account_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_account">
+                            <span id="">계정</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_media_center_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_media_center">
+                            <span id="">미디어 센터</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_relations_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_relations">
+                            <span id="">투자 정보(IR)</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_jobs_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_jobs">
+                            <span id="">입사 정보</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_waysToWatch_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_waysToWatch">
+                            <span id="">넷플릭스 지원 디바이스</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_terms_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_terms">
+                            <span id="">이용 약관</span>
+                            </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_privacy_separate_link_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_privacy_separate_link">
+                            <span id="">개인정보</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_cookies_separate_link_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_cookies_separate_link">
+                            <span id="">쿠키 설정</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_corporate_information_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_corporate_information">
+                            <span id="">회사 정보</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_contact_us_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_contact_us">
+                            <span id="">문의하기</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_speed_test_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_speed_test">
+                            <span id="">속도 테스트</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item" placeholder="footer_responsive_link_legal_notices_item">
+                        <a class="footer-link"  href="#" placeholder="footer_responsive_link_legal_notices">
+                            <span id="">법적 고지</span>
+                        </a>
+                    </li>
+                    <li class="footer-link-item originals-link" placeholder="footer_responsive_link_only_on_netflix_item">
+                        <a class="footer-link" href="#" placeholder="footer_responsive_link_only_on_netflix">
+                            <span id="" data-uia="data-uia-footer-label">오직 넷플릭스에서</span>
+                        </a>
                     </li>
                 </ul>
-            </aside>
-            <button >언어바꾸기</button>
-            <aside>
-                <p>넷플릭스 대한민국</p>
-            </aside>
-                <br>
-            <address>
-                <p>넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587</p>
-                <p>대표: 레지널드 숀 톰프슨</p>
-                <p>이메일 주소: korea@netflix.com</p>
-                <p>주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</p>
-                <p>사업자등록번호: 165-87-00119</p>
-                <p>클라우드 호스팅: Amazon Web Services Inc.</p>
-                <a href="https://www.ftc.go.kr/bizCommPop.do?wrkr_no=1658700119">공정거래위원회 웹 사이트</a>
-                
-            </address>
+
+            <div class="lang-selection-container" id="lang-switcher">
+                <div data-uia="language-picker+container" class="ui-select-wrapper">
+                    <label for="lang-switcher-select" class="ui-label">
+                        <span class="ui-label-text">언어 선택</span>
+                    </label>
+                    <div class="select-language">
+                        <select data-uia="language-picker" class="ui-select medium" id="lang-switcher-select" tabindex="0" placeholder="lang-switcher">
+                            <option selected="" lang="ko" value="/kr/" data-language="ko" data-country="KR">한국어</option>
+                            <option lang="en" value="/kr-en/" data-language="en" data-country="KR">English</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-country">넷플릭스 대한민국</p>
+                <div class="copy-text">
+                    <div class="copy-text-block">넷플릭스서비시스코리아 유한회사 통신판매업신고번호: 제2018-서울종로-0426호 전화번호: 080-001-9587</div>
+                    <div class="copy-text-block">대표: 레지널드 숀 톰프슨</div>
+                    <div class="copy-text-block">이메일 주소: korea@netflix.com</div>
+                    <div class="copy-text-block">주소: 대한민국 서울특별시 종로구 우정국로 26, 센트로폴리스 A동 20층 우편번호 03161</div>
+                    <div class="copy-text-block">사업자등록번호: 165-87-00119</div>
+                    <div class="copy-text-block">클라우드 호스팅: Amazon Web Services Inc.</div>
+                    <div id="" class="copy-text-block" data-uia="">
+                        <a href="http://www.ftc.go.kr/bizCommPop.do?wrkr_no=1658700119">공정거래위원회 웹사이트</a>
+                    </div>
+                </div>
         </div>
-        
-        
     </footer>
 
 </body>
