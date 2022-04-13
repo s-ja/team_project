@@ -1,12 +1,13 @@
 *{
-    border: 1px solid springgreen;
+    /* border: 1px solid springgreen; */
 }
 body{
     font: 16px/1.5 "Noto Sans KR",sans-serif;
     color: #333;
     background: black;
-    /* width: 1000px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* margin: 0 0 0 50px; */
+    /* padding-left: 50px; */
 }
 a,a:link{
     text-decoration: none;
@@ -58,6 +59,35 @@ video{
     top: 20px;
     column-gap: 20px;
     line-height: 30.42px;
+}
+.search_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30.42px;
+    height: 30.42px;
+    position: relative;
+    overflow: hidden;
+}
+.search_box{
+    display: flex;
+    position: absolute;
+    right: 0;
+    line-height: 30.42px;
+}
+.search_box input{
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+}
+.search_icon{
+    border-style: none;
+    background: transparent;
+    color: aliceblue;
+    font-size: 1.25rem;
+}
+.active{
+    width: 250px;
+    /* transition: ease-in-out .3s; */
 }
 .menu li:last-child img{
     border-radius: 5px;
@@ -134,25 +164,50 @@ video{
     width: 50px;
     height: 50px;
 }
-.anime, .f_drama, .k_drama, .movie{
+.anime, .f_drama, .k_drama, .movie, .top10{
     width: 100%;
     height: 200px;
     background: black;
     display: inline-block;
     position: absolute;
-    top: 73%;
+    top: 83%;
     color: aliceblue;
     font-weight: 900;
     font-size: 1.5rem;
 }
 .f_drama{
-    top: 103%;
+    top: 113%;
 }
 .k_drama{
-    top: 133%;
+    top: 143%;
 }
 .movie{
-    top: 163%;
+    top: 173%;
+}
+.top10{
+    top: 203%;
+}
+.top10 .carousel_item{
+    column-gap: 150px;
+    margin-left: 50px;
+}
+/* .carousel_item .top_number{
+    font-weight: bolder;
+    z-index: 0;
+    font-size: 20rem;
+    height: 284px;
+    position: absolute;
+    z-index: -100;
+    display: flex;
+    column-gap: 284px;
+} */
+.carousel_item .top_contents{
+    margin-left: 100px;
+    /* height: 200px; */
+}
+.top_contents img{
+    height: 300px;
+    object-fit: contain;
 }
 .category_title{
     padding: 0 50px;
@@ -179,6 +234,8 @@ video{
     overflow: scroll;
     overflow-y: hidden;
     /* overflow-x: hidden; */
+    position: relative;
+    margin-left: 50px;
 }
 /* .carousel_item::-webkit-scrollbar{
     display: none;
