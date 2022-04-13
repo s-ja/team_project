@@ -87,6 +87,17 @@ button.start p{
 .faq-list {
     margin: 0 auto;
     max-width: 800px;
+    font-size: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.faq-list a{
+    border: 1px solid grey;
+    background: grey;
+}
+.faq-list span{
+    border: 1px solid grey;
+    background: grey;
 }
 .bottom-email{
     text-align: center;
