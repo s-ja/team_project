@@ -24,35 +24,39 @@ h3 {
     font-size: 20px;
     color: #fff;
 }
-.header-sel-lang{
-    box-sizing: border-box;
-}
-.email-start{
-    position: relative;
-}
-.email-start input{
-    width: 50%;
-    box-sizing: border-box;
-}
 .article-wrap{
     text-align: center;
 }
 .header{
     display: flex;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: flex-end;
     padding: 20px;
     overflow: hidden;
 }
 .header-logo{
-    width: 154px;
-    font-weight: 500;
-    font-size: 1rem;
+    margin-right: auto
 }
-.header button{
-    width: 50px;
-    height: 20px;
-    float: right;
+.languageBTN{
+    padding: 0 10px 0 0;
+}
+.email-start{
+    position: relative;
+
+}
+.email-start input{
+    width: 60%;
+    height: 50px;
+    
+}
+button.start{
+    color: #fff;
+    background-color: #e50914;
+    border: 0;
+    height: 54px;
+}
+button.start p{
+    border: 0;
 }
 .loginBTN{
     width: 100px;
@@ -66,14 +70,9 @@ h3 {
     text-align: center;
     padding: 10px 10px 0 25px;
 }
-.start{
-    color: #fff;
-    background-color: #e50914;
-    border: 0;
-    
-}
+/* 영화시리즈를 무제한으로 */
 .tv-enjoy-container-wrap, .offline-container-wrap, .device-container-wrap, .kid-container-wrap{
-    max-width: 1100px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -89,28 +88,40 @@ h3 {
     margin: 0 auto;
     max-width: 800px;
 }
-.footer-guide{
-    max-width: 1100px;
-    margin: 0 auto;
-    align-items: center;
-}
-.footer-links-wrap {
-    max-width: 1000px;
-    font-size: 13px;
-    box-sizing: border-box;
+.bottom-email{
     text-align: center;
+    padding: 30px;
 }
 ul.structural>li {
     list-style: none;
     margin-left: 0;
 }
 .footer-link-item {
-    box-sizing: border-box;
     padding: 0;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     display: inline-block;
     min-width: 100px;
     width: 25%;
     padding-right: 12px;
-    vertical-align: top;
+}
+.footer-link-item a{
+    padding: 0;
+    margin: 0;
+}
+.site-footer{
+    max-width: 1200px;
+    margin: 0 200px auto;
+    text-align: left;
+}
+.lang-selection-container{
+    max-width: 1200px;
+    margin: 0 200px auto;
+}
+.footer-country{
+    max-width: 1200px;
+    margin: 0 200px auto;
+}
+.copy-text{
+    max-width: 1200px;
+    margin: 0 200px auto;
 }
