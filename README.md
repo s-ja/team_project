@@ -8,11 +8,11 @@
 선영훈
 
 # tasks
-1차 주제선정 필요 - clear
-netflix - clone
-landing page / header / footer - jojinyang
-section / carousel - anseungji
-.json db construction search needed
+- 1차 주제선정 필요 - clear
+- netflix - clone
+- landing page / header / footer - jojinyang
+- section / carousel - anseungji
+- .json db construction search needed
 
 # figma
 https://www.figma.com/file/3aM822UwTX4OHwCfyJOCEU/team_project4?node-id=0%3A1
