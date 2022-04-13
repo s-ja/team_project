@@ -69,6 +69,15 @@ video{
     position: relative;
     overflow: hidden;
 }
+.search_wrap:active{
+    width: 150px;
+    height: 30.42px;
+    position: absolute;
+    right: 0;
+    color: red;
+    background: gold;
+    
+}
 .search_box{
     display: flex;
     position: absolute;
@@ -84,10 +93,6 @@ video{
     background: transparent;
     color: aliceblue;
     font-size: 1.25rem;
-}
-.active{
-    width: 250px;
-    /* transition: ease-in-out .3s; */
 }
 .menu li:last-child img{
     border-radius: 5px;
