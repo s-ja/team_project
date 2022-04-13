@@ -1,0 +1,127 @@
+body{
+    font: 16px/1.5 "Noto Sans KR",sans-serif;
+    color: white;
+    background: black;
+    /* width: 1000px; */
+    margin: 0 auto;
+}
+a,a:link{
+    text-decoration: none;
+    color: inherit;
+}
+.d_none{
+    display: none  ;
+}
+h1 {
+    font-size: 40px;
+    color: #fff;
+}
+h2 {
+    font-size: 30px;
+    color: #fff;
+}
+h3 {
+    font-size: 20px;
+    color: #fff;
+}
+.article-wrap{
+    text-align: center;
+}
+.header{
+    display: flex;
+    margin: 0 auto;
+    justify-content: flex-end;
+    padding: 20px;
+    overflow: hidden;
+}
+.header-logo{
+    margin-right: auto
+}
+.languageBTN{
+    padding: 0 10px 0 0;
+}
+.email-start{
+    position: relative;
+
+}
+.email-start input{
+    width: 60%;
+    height: 50px;
+    
+}
+button.start{
+    color: #fff;
+    background-color: #e50914;
+    border: 0;
+    height: 54px;
+}
+button.start p{
+    border: 0;
+}
+.loginBTN{
+    width: 100px;
+    background-color: #e50914;
+    border-radius: 0.3rem;
+}
+.loginBTN a{
+    width: 100px;
+    color: #fff;
+    display: flex;
+    text-align: center;
+    padding: 10px 10px 0 25px;
+}
+/* 영화시리즈를 무제한으로 */
+.tv-enjoy-container-wrap, .offline-container-wrap, .device-container-wrap, .kid-container-wrap{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* 자주묻는 질문 */
+.faq{
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+.faq-list {
+    margin: 0 auto;
+    max-width: 800px;
+}
+.bottom-email{
+    text-align: center;
+    padding: 30px;
+}
+ul.structural>li {
+    list-style: none;
+    margin-left: 0;
+}
+.footer-link-item {
+    padding: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    min-width: 100px;
+    width: 25%;
+    padding-right: 12px;
+}
+.footer-link-item a{
+    padding: 0;
+    margin: 0;
+}
+.site-footer{
+    max-width: 1200px;
+    margin: 0 200px auto;
+    text-align: left;
+}
+.lang-selection-container{
+    max-width: 1200px;
+    margin: 0 200px auto;
+}
+.footer-country{
+    max-width: 1200px;
+    margin: 0 200px auto;
+}
+.copy-text{
+    max-width: 1200px;
+    margin: 0 200px auto;
+}
