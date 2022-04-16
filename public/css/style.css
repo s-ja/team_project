@@ -2,8 +2,9 @@ body{
     font: 16px/1.5 "Noto Sans KR",sans-serif;
     color: #333;
     background: black;
-    /* width: 1000px; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
+    /* margin: 0 0 0 50px; */
+    /* padding-left: 50px; */
 }
 a,a:link{
     text-decoration: none;
@@ -14,10 +15,15 @@ a,a:link{
 }
 .header_wrap{
     display: flex;
-    width: calc(100% - 25px);
+    /* width: calc(100% - 25px); */
+    width: 100%;
     /* padding: 100px 25px; */
-    background: rgba(0,0,0,0.5);
-    position: relative;
+    /* background: rgba(0,0,0,0.5); */
+    background: linear-gradient(to bottom,black,black 10%,transparent);
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
     justify-content: center;
     align-items: center;
 }
@@ -37,6 +43,11 @@ a,a:link{
     line-height: 30.42px;
     /* font-weight: bolder; */
 }
+video{
+    position: absolute;
+    top: -30px;
+    z-index: -1;
+}
 .menu{
     position: absolute;
     display: flex;
@@ -46,6 +57,43 @@ a,a:link{
     column-gap: 20px;
     line-height: 30.42px;
 }
+.search_wrap{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30.42px;
+    height: 30.42px;
+    position: relative;
+    overflow: hidden;
+}
+.search_wrap:active{
+    width: 150px;
+    height: 30.42px;
+    position: absolute;
+    right: 0;
+    color: red;
+    background: gold;
+    
+}
+.search_box{
+    display: flex;
+    position: absolute;
+    right: 0;
+    line-height: 30.42px;
+}
+.search_box input{
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid white;
+}
+.search_icon{
+    border-style: none;
+    background: transparent;
+    color: aliceblue;
+    font-size: 1.25rem;
+}
+.menu li:last-child img{
+    border-radius: 5px;
+}
 .hero{
     width: 100%;
     height: auto;
@@ -54,7 +102,7 @@ a,a:link{
     color: aliceblue;
     width: 30%;
     position: absolute;
-    top: 500px;
+    top: calc(30% - 25px);
     left: 100px;
 }
 .n_series{
@@ -86,3 +134,111 @@ a,a:link{
     color: white;
     background: rgba(0,0,0,0.5);
 }
+.extra{
+    position: absolute;
+    right: 0;
+    top: 65%;
+    display: flex;
+}
+.extra button{
+    color: aliceblue;
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-weight: 900;
+    font-size: 1rem;
+    border: 2px solid white;
+    margin-right: 50px;
+}
+.rating{
+    font-weight: bolder;
+    background: gold;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+.rating img {
+    width: 50px;
+    height: 50px;
+}
+.anime, .f_drama, .k_drama, .movie, .top10{
+    width: 100%;
+    height: 200px;
+    background: black;
+    display: inline-block;
+    position: absolute;
+    top: 83%;
+    color: aliceblue;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+.f_drama{
+    top: 113%;
+}
+.k_drama{
+    top: 143%;
+}
+.movie{
+    top: 173%;
+}
+.top10{
+    top: 203%;
+}
+.top10 .carousel_item{
+    column-gap: 150px;
+    margin-left: 50px;
+}
+/* .carousel_item .top_number{
+    font-weight: bolder;
+    z-index: 0;
+    font-size: 20rem;
+    height: 284px;
+    position: absolute;
+    z-index: -100;
+    display: flex;
+    column-gap: 284px;
+} */
+.carousel_item .top_contents{
+    margin-left: 100px;
+    /* height: 200px; */
+}
+.top_contents img{
+    height: 300px;
+    object-fit: contain;
+}
+.category_title{
+    padding: 0 50px;
+}
+.controls{
+    font-size: 2rem;
+    color: aliceblue;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    justify-content: space-between;
+}
+.controls > .prev, .controls > .next{
+    width: 50px;
+    height: 200px;
+    background: rgba(0,0,0,0.5);
+    line-height: 200px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.carousel_item{
+    display: flex;
+    column-gap: 5px;
+    overflow: scroll;
+    overflow-y: hidden;
+    /* overflow-x: hidden; */
+    position: relative;
+    margin-left: 50px;
+}
+/* .carousel_item::-webkit-scrollbar{
+    display: none;
+} */
