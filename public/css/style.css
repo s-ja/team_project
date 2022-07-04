@@ -1,7 +1,13 @@
+/* *,*::after,*::before{
+    border: 1px solid greenyellow;
+} */
+
 body{
     font: 16px/1.5 "Noto Sans KR",sans-serif;
     color: #333;
     background: black;
+    width: 100%;
+    height: 100%;
     /* margin: 0 auto; */
     /* margin: 0 0 0 50px; */
     /* padding-left: 50px; */
@@ -43,10 +49,18 @@ a,a:link{
     line-height: 30.42px;
     /* font-weight: bolder; */
 }
+.vid_wrap{
+    width: 100%;
+    height: 100%;
+    background: rebeccapurple;
+}
 video{
     position: absolute;
     top: -30px;
     z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: black;
 }
 .menu{
     position: absolute;
@@ -168,7 +182,8 @@ video{
 }
 .anime, .f_drama, .k_drama, .movie, .top10{
     width: 100%;
-    height: 200px;
+    /* height: 200px; */
+    height: 100%;
     background: black;
     display: inline-block;
     position: absolute;
